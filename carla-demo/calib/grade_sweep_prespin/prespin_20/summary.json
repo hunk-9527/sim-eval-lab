@@ -1,0 +1,41 @@
+{
+  "map": "Carla/Maps/Town04",
+  "vehicle": "vehicle.carlamotors.carlacola",
+  "theta": 0.4,
+  "warmup": 400,
+  "window": 500,
+  "straight_start": [
+    -364.3,
+    37.1
+  ],
+  "points": [
+    {
+      "offset_m": 0,
+      "grade_pct": 0.014,
+      "wp_pitch_deg": 0.0,
+      "loc": [
+        -364.34,
+        37.06,
+        0.3
+      ],
+      "up": {
+        "v": 3.4015,
+        "std": 0.0001,
+        "class": "稳定平衡",
+        "n": 900,
+        "note": "ok（冲刺 0 拍 + 测量 900 拍）"
+      },
+      "down": {
+        "v": 17.101,
+        "std": 0.2777,
+        "class": "极限环",
+        "n": 900,
+        "note": "ok（冲刺 238 拍 + 测量 900 拍）"
+      },
+      "delta": 13.6995
+    }
+  ],
+  "pre_spin_theta": 0.8,
+  "pre_spin_v": 20.0,
+  "pre_spin_steps": 300
+}

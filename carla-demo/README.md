@@ -62,6 +62,9 @@ python 06_vehicle_ladder.py
 :: ④ 迟滞对照 S0（图 4 左的 Δ）
 python 07_low_speed_balance.py --vehicle vehicle.tesla.model3
 
+:: ④′ 测点坡度扫掠 S0′（反例 3）—— 换四个钉住位置各跑一次
+python 11_grade_sweep.py --vehicle vehicle.carlamotors.carlacola --theta 0.40
+
 :: ⑤ ACC 闭环（图 1，刹车 0/500 拍）
 python 09_acc_carla.py --vehicle vehicle.tesla.model3 --set-speed 25 --duration 60
 
@@ -97,28 +100,43 @@ python 10_free_drive_repro.py
 | 阻力曲线 `G(10)`、`G(30)` | `03_calibrate_longitudinal.py` | `calib/longitudinal_model.json` → `tables.G_v` |
 | 五车油门阶梯 | `06_vehicle_ladder.py` | `calib/vehicle_ladder.csv`、`calib/veh_*/summary.csv` |
 | 五车迟滞差 Δ | `07_low_speed_balance.py` | `calib/veh_*/balance_table.csv`（`up` vs `down` 两行） |
-| 测点坡度扫掠 5.84→19.02 | ⚠ `11_grade_sweep.py`（**待补**） | ⚠ **原始数据未落盘**，见下方"已知缺口" |
+| 测点坡度扫掠 | `11_grade_sweep.py` | `calib/grade_sweep_carlacola/`、`grade_sweep_tesla/`、`grade_sweep_prespin/` |
 | 刹车 0/500 拍 | `09_acc_carla.py` | `calib/acc_loop_tesla_model3/acc_loop.csv`、`acc_loop_verdict.json` |
 | 自由行驶 vs 跑步机（图 4 右） | `10_free_drive_repro.py` | `calib/free_drive_repro/summary.json` |
 | 车辆物理参数 | `08_probe_physics.py` | `calib/carla_vehicle_physics.json` |
 
 `calib/` 只保留 json / csv / log；**png 由脚本重新生成，不入库**。
 
-### 已知缺口（诚实标注）
+### 反例 3 的复现结果（2026-10-18 补跑）
 
-**测点坡度扫掠（反例 3）的逐次运行数据没有留存。** 当时是一次性实验，
-只把汇总值写进了 `calibration-playbook.md` 的 S0′ 表：
+`11_grade_sweep.py` 在 Town04 直道 0 / 200 / 400 / 600 m 四点各跑一次 up/down。
+局部坡度**逐位复现**：`+5.18% / 0.00% / −6.00%`（0 m 点为 `+0.01%`，
+与早期记录的 `+0.29%` 略有差异，属落点微调）。
 
-| 位置 | 局部坡度 | 升速落点 | 降速落点 | Δ |
-|---|---|---|---|---|
-| 0 m | +0.29% | 3.30 | 12.44 | 9.14 |
-| 200 m | **+5.18%** | **0.10** | **5.84** | 5.75 |
-| 400 m | 0.00% | 3.32 | 12.47 | 9.15 |
-| 600 m | **−6.00%** | **4.87** | **19.02** | 14.15 |
+**carlacola，θ=0.40，冲刺初速 25 m/s：**
 
-→ **待补** `11_grade_sweep.py`：沿 Town04 直道四个落点各跑一次 S0 对照，
-把逐次曲线落到 `calib/grade_sweep/`。补齐前，这一条**只能算"报告过的观测"，
-不能算"可复现"**。其余两条（反例 1、2）数据齐全。
+| 位置 | 局部坡度 | 升速落点 | 降速落点 |
+|---|---|---|---|
+| 0 m | +0.01% | 3.40 | 17.64 |
+| 200 m | +5.18% | **0.098** | 1.09 |
+| 400 m | 0.00% | 3.42 | 17.75 |
+| 600 m | −6.00% | **4.88** | ⚠ 未达平衡（撞 `v_max=40`） |
+
+**两件事要说清楚：**
+
+- ✅ **升速落点复现良好**（早期记录 3.30 / 0.10 / 3.32 / 4.87，误差 ≤3%）。
+  同一台车、同一油门，只换测点，落点从 0.098 摆到 4.88 m/s ——
+  "平衡车速 = f(车, 测点坡度)"成立。
+- ⚠ **降速落点不可复现，而且原因已定位**：它依赖**冲刺初速**。
+  同一落点（0 m）实测 10.93（16 m/s）/ 17.10（20 m/s）/ 17.64（25 m/s）。
+  早期记录 12.44 落在 16 与 20 之间，而**当时的冲刺初速没有记录下来**。
+
+→ 这不是"跑错了"，是更硬的结论：**不记录初始条件的"落点"本身就不是可迁移的数**。
+  所以本仓库所有降速数据都把 `pre_spin_v` 写进 `summary.json`。
+
+**tesla（单速车）同一扫掠**（`grade_sweep_tesla/`）：up 与 down 在每个落点都重合
+（Δ < 0.004），落点随坡度单调：`6.28 → 11.06 m/s`。
+说明**测点效应与迟滞无关** —— 单速车没有迟滞，照样摆 1.76 倍。
 
 ---
 
