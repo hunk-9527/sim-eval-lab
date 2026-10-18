@@ -1,0 +1,15 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# 图由脚本生成，不入库
+*.png
+*.jpg
+
+# 临时输出
+out/
+_probe_*.py
+slurmlog/
+*.tmp

@@ -1,0 +1,166 @@
+[carla] map = Carla/Maps/Town10HD_Opt（★ 不切图：load_world 第二次必崩）
+
+========================================================================
+[ladder] vehicle.micro.microlino  第 1 次尝试
+========================================================================
+    [cfg] 标定 dt = 0.1s | acc_sim AccConfig.dt = 0.1
+    [carla] 已连接 localhost:2000 | map = Carla/Maps/Town10HD_Opt
+    [carla] 车型 = vehicle.micro.microlino | 出生点 #2（跑步机法只需一块平地，不挑直道）
+    [out] D:\AI\myProject\learning\projects\carla-demo\calib\veh_micro_microlino\meta.json
+    [1/12] throttle=0.10  -> 81 tick, v_ss=0.00 m/s  (油门死区（车全程未起步）)
+    [2/12] throttle=0.12  -> 81 tick, v_ss=0.00 m/s  (油门死区（车全程未起步）)
+    [3/12] throttle=0.15  -> 127 tick, v_ss=0.85 m/s  (稳态)
+    [4/12] throttle=0.20  -> 81 tick, v_ss=1.22 m/s  (稳态)
+    [5/12] throttle=0.30  -> 109 tick, v_ss=2.14 m/s  (稳态)
+    [6/12] throttle=0.40  -> 128 tick, v_ss=3.25 m/s  (稳态)
+    [7/12] throttle=0.50  -> 150 tick, v_ss=4.71 m/s  (稳态)
+    [8/12] throttle=0.60  -> 187 tick, v_ss=6.64 m/s  (稳态)
+    [9/12] throttle=0.70  -> 225 tick, v_ss=9.63 m/s  (稳态)
+    [10/12] throttle=0.80  -> 222 tick, v_ss=13.96 m/s  (稳态)
+    [11/12] throttle=0.90  -> 253 tick, v_ss=19.99 m/s  (稳态)
+    [12/12] throttle=1.00  -> 236 tick, v_ss=25.30 m/s  (稳态)
+    [carla] 同步模式已关闭。
+    [out] D:\AI\myProject\learning\projects\carla-demo\calib\veh_micro_microlino\summary.csv
+    [out] D:\AI\myProject\learning\projects\carla-demo\calib\veh_micro_microlino\throttle_accel_map.png
+    INFO:  Found the required file in cache!  Carla/Maps/Nav/Town10HD_Opt.bin 
+[ladder] vehicle.micro.microlino: rc=0 完成 12 档
+[ladder] ✅ vehicle.micro.microlino  微型两座 (~500 kg 级)
+
+========================================================================
+[ladder] vehicle.audi.a2  第 1 次尝试
+========================================================================
+    [cfg] 标定 dt = 0.1s | acc_sim AccConfig.dt = 0.1
+    [carla] 已连接 localhost:2000 | map = Carla/Maps/Town10HD_Opt
+    [carla] 车型 = vehicle.audi.a2 | 出生点 #2（跑步机法只需一块平地，不挑直道）
+    [out] D:\AI\myProject\learning\projects\carla-demo\calib\veh_audi_a2\meta.json
+    [1/12] throttle=0.10  -> 81 tick, v_ss=0.00 m/s  (油门死区（车全程未起步）)
+    [2/12] throttle=0.12  -> 81 tick, v_ss=0.00 m/s  (油门死区（车全程未起步）)
+    [3/12] throttle=0.15  -> 98 tick, v_ss=0.19 m/s  (稳态)
+    [4/12] throttle=0.20  -> 81 tick, v_ss=0.19 m/s  (稳态)
+    [5/12] throttle=0.30  已有结果，跳过
+    [6/12] throttle=0.40  -> 87 tick, v_ss=1.67 m/s  (稳态)
+    [7/12] throttle=0.50  -> 194 tick, v_ss=3.67 m/s  (稳态)
+    [8/12] throttle=0.60  已有结果，跳过
+    [9/12] throttle=0.70  -> 448 tick, v_ss=24.51 m/s  (稳态)
+    [10/12] throttle=0.80  -> 670 tick, v_ss=39.71 m/s  (稳态)
+    [11/12] throttle=0.90  -> 200 tick, v_ss=40.08 m/s  (达到 v_max=40.0（未到稳态）)
+    [12/12] throttle=1.00  已有结果，跳过
+    [carla] 同步模式已关闭。
+    [out] D:\AI\myProject\learning\projects\carla-demo\calib\veh_audi_a2\summary.csv
+    [out] D:\AI\myProject\learning\projects\carla-demo\calib\veh_audi_a2\throttle_accel_map.png
+    INFO:  Found the required file in cache!  Carla/Maps/Nav/Town10HD_Opt.bin 
+[ladder] vehicle.audi.a2: rc=0 完成 9 档
+[ladder] ✅ vehicle.audi.a2  小型两厢 (~1100 kg 级)
+
+========================================================================
+[ladder] vehicle.tesla.model3  第 1 次尝试
+========================================================================
+    [cfg] 标定 dt = 0.1s | acc_sim AccConfig.dt = 0.1
+    [carla] 已连接 localhost:2000 | map = Carla/Maps/Town10HD_Opt
+    [carla] 车型 = vehicle.tesla.model3 | 出生点 #2（跑步机法只需一块平地，不挑直道）
+    [out] D:\AI\myProject\learning\projects\carla-demo\calib\veh_tesla_model3\meta.json
+    [1/12] throttle=0.10  -> 81 tick, v_ss=0.00 m/s  (油门死区（车全程未起步）)
+    [2/12] throttle=0.12  -> 145 tick, v_ss=1.27 m/s  (稳态)
+    [3/12] throttle=0.15  -> 100 tick, v_ss=2.04 m/s  (稳态)
+    [4/12] throttle=0.20  -> 138 tick, v_ss=3.40 m/s  (稳态)
+    [5/12] throttle=0.30  -> 146 tick, v_ss=5.01 m/s  (稳态)
+    [6/12] throttle=0.40  -> 241 tick, v_ss=9.02 m/s  (稳态)
+    [7/12] throttle=0.50  -> 249 tick, v_ss=14.07 m/s  (稳态)
+    [8/12] throttle=0.60  -> 288 tick, v_ss=20.01 m/s  (稳态)
+    [9/12] throttle=0.70  -> 365 tick, v_ss=29.22 m/s  (稳态)
+    [10/12] throttle=0.80  -> 223 tick, v_ss=40.00 m/s  (达到 v_max=40.0（未到稳态）)
+    [11/12] throttle=0.90  -> 97 tick, v_ss=40.18 m/s  (达到 v_max=40.0（未到稳态）)
+    [12/12] throttle=1.00  -> 69 tick, v_ss=40.11 m/s  (达到 v_max=40.0（未到稳态）)
+    [carla] 同步模式已关闭。
+    [out] D:\AI\myProject\learning\projects\carla-demo\calib\veh_tesla_model3\summary.csv
+    [out] D:\AI\myProject\learning\projects\carla-demo\calib\veh_tesla_model3\throttle_accel_map.png
+    INFO:  Found the required file in cache!  Carla/Maps/Nav/Town10HD_Opt.bin 
+[ladder] vehicle.tesla.model3: rc=0 完成 12 档
+[ladder] ✅ vehicle.tesla.model3  中型轿车（基线，~1800 kg 级）
+
+========================================================================
+[ladder] vehicle.nissan.patrol  第 1 次尝试
+========================================================================
+    [cfg] 标定 dt = 0.1s | acc_sim AccConfig.dt = 0.1
+    [carla] 已连接 localhost:2000 | map = Carla/Maps/Town10HD_Opt
+    [carla] 车型 = vehicle.nissan.patrol | 出生点 #2（跑步机法只需一块平地，不挑直道）
+    [out] D:\AI\myProject\learning\projects\carla-demo\calib\veh_nissan_patrol\meta.json
+    [1/12] throttle=0.10  -> 81 tick, v_ss=0.00 m/s  (油门死区（车全程未起步）)
+    [2/12] throttle=0.12  -> 81 tick, v_ss=0.00 m/s  (油门死区（车全程未起步）)
+    [3/12] throttle=0.15  -> 81 tick, v_ss=0.00 m/s  (油门死区（车全程未起步）)
+    [4/12] throttle=0.20  -> 81 tick, v_ss=0.00 m/s  (油门死区（车全程未起步）)
+    [5/12] throttle=0.30  -> 81 tick, v_ss=0.11 m/s  (稳态)
+    [6/12] throttle=0.40  -> 108 tick, v_ss=0.29 m/s  (稳态)
+    [7/12] throttle=0.50  -> 762 tick, v_ss=33.17 m/s  (稳态)
+    [8/12] throttle=0.60  -> 432 tick, v_ss=40.01 m/s  (达到 v_max=40.0（未到稳态）)
+    [9/12] throttle=0.70  -> 231 tick, v_ss=40.00 m/s  (达到 v_max=40.0（未到稳态）)
+    [10/12] throttle=0.80  -> 165 tick, v_ss=40.01 m/s  (达到 v_max=40.0（未到稳态）)
+    [11/12] throttle=0.90  -> 130 tick, v_ss=40.13 m/s  (达到 v_max=40.0（未到稳态）)
+    [12/12] throttle=1.00  -> 107 tick, v_ss=40.12 m/s  (达到 v_max=40.0（未到稳态）)
+    [carla] 同步模式已关闭。
+    [out] D:\AI\myProject\learning\projects\carla-demo\calib\veh_nissan_patrol\summary.csv
+    [out] D:\AI\myProject\learning\projects\carla-demo\calib\veh_nissan_patrol\throttle_accel_map.png
+    INFO:  Found the required file in cache!  Carla/Maps/Nav/Town10HD_Opt.bin 
+[ladder] vehicle.nissan.patrol: rc=0 完成 12 档
+[ladder] ✅ vehicle.nissan.patrol  大型 SUV (~2500 kg 级)
+
+========================================================================
+[ladder] vehicle.carlamotors.carlacola  第 1 次尝试
+========================================================================
+    [cfg] 标定 dt = 0.1s | acc_sim AccConfig.dt = 0.1
+    [carla] 已连接 localhost:2000 | map = Carla/Maps/Town10HD_Opt
+    [carla] 车型 = vehicle.carlamotors.carlacola | 出生点 #2（跑步机法只需一块平地，不挑直道）
+    [out] D:\AI\myProject\learning\projects\carla-demo\calib\veh_carlamotors_carlacola\meta.json
+    [1/12] throttle=0.10  -> 81 tick, v_ss=0.00 m/s  (油门死区（车全程未起步）)
+    [2/12] throttle=0.12  -> 81 tick, v_ss=0.05 m/s  (稳态)
+    [3/12] throttle=0.15  -> 81 tick, v_ss=0.06 m/s  (稳态)
+    [4/12] throttle=0.20  -> 81 tick, v_ss=0.07 m/s  (稳态)
+    [5/12] throttle=0.30  -> 81 tick, v_ss=0.10 m/s  (稳态)
+    [6/12] throttle=0.40  -> 150 tick, v_ss=2.63 m/s  (稳态)
+    [7/12] throttle=0.50  -> 130 tick, v_ss=4.49 m/s  (稳态)
+    [8/12] throttle=0.60  -> 920 tick, v_ss=5.05 m/s  (稳态)
+    [9/12] throttle=0.70  -> 1458 tick, v_ss=33.13 m/s  (稳态)
+    [10/12] throttle=0.80  -> 1140 tick, v_ss=40.00 m/s  (达到 v_max=40.0（未到稳态）)
+    [11/12] throttle=0.90  -> 750 tick, v_ss=40.02 m/s  (达到 v_max=40.0（未到稳态）)
+    [12/12] throttle=1.00  -> 570 tick, v_ss=40.00 m/s  (达到 v_max=40.0（未到稳态）)
+    [carla] 同步模式已关闭。
+    [out] D:\AI\myProject\learning\projects\carla-demo\calib\veh_carlamotors_carlacola\summary.csv
+    [out] D:\AI\myProject\learning\projects\carla-demo\calib\veh_carlamotors_carlacola\throttle_accel_map.png
+    INFO:  Found the required file in cache!  Carla/Maps/Nav/Town10HD_Opt.bin 
+[ladder] vehicle.carlamotors.carlacola: rc=0 完成 12 档
+[ladder] ✅ vehicle.carlamotors.carlacola  半挂牵引车 (~5500 kg 级)
+
+====================================================================================================
+跨车型稳态速度对照   v_ss [m/s]   （同一恒定油门，跑到速度不再上升）
+====================================================================================================
+ throttle |    micro.microlino |            audi.a2 |       tesla.model3 |      nissan.patrol | carlamotors.carlacola
+----------------------------------------------------------------------------------------------------
+     0.10 |        0.000  [死区] |        0.000  [死区] |        0.000  [死区] |        0.000  [死区] |        0.000  [死区]
+     0.12 |        0.000  [死区] |        0.000  [死区] |       1.273        |        0.000  [死区] |       0.051       
+     0.15 |       0.846        |       0.195        |       2.040        |        0.000  [死区] |       0.056       
+     0.20 |       1.220        |       0.189        |       3.402        |        0.000  [死区] |       0.067       
+     0.30 |       2.138        |        --  (未跑)    |       5.006        |       0.107        |       0.096       
+     0.40 |       3.250        |       1.667        |       9.021        |       0.290        |       2.627       
+     0.50 |       4.712        |       3.667        |      14.073        |      33.168        |       4.492       
+     0.60 |       6.638        |        --  (未跑)    |      20.015        |      40.005        |       5.052       
+     0.70 |       9.634        |      24.511        |      29.219        |      40.001        |      33.130       
+     0.80 |      13.959        |      39.708        |      40.000        |      40.010        |      40.004       
+     0.90 |      19.989        |      40.078        |      40.185        |      40.128        |      40.016       
+     1.00 |      25.304        |        --  (未跑)    |      40.114        |      40.116        |      40.005       
+----------------------------------------------------------------------------------------------------
+  vehicle.micro.microlino           v_ss(θ=0.50) = 4.71 m/s | 最高档 θ=1.00 -> 25.30 m/s
+  vehicle.audi.a2                   v_ss(θ=0.50) = 3.67 m/s | 最高档 θ=0.90 -> 40.08 m/s
+  vehicle.tesla.model3              v_ss(θ=0.50) = 14.07 m/s | 最高档 θ=0.90 -> 40.19 m/s
+  vehicle.nissan.patrol             v_ss(θ=0.50) = 33.17 m/s | 最高档 θ=0.90 -> 40.13 m/s
+  vehicle.carlamotors.carlacola     v_ss(θ=0.50) = 4.49 m/s | 最高档 θ=0.90 -> 40.02 m/s
+
+[out] D:\AI\myProject\learning\projects\carla-demo\calib\vehicle_ladder.csv
+[out] D:\AI\myProject\learning\projects\carla-demo\calib\vehicle_ladder.png
+
+[ladder] 地图 = Carla/Maps/Town10HD_Opt （所有车型同一张图、同一步长，可横向比）
+INFO:  Found the required file in cache!  Carla/Maps/Nav/Town10HD_Opt.bin 
+INFO:  Found the required file in cache!  Carla/Maps/Nav/Town10HD_Opt.bin 
+INFO:  Found the required file in cache!  Carla/Maps/Nav/Town10HD_Opt.bin 
+INFO:  Found the required file in cache!  Carla/Maps/Nav/Town10HD_Opt.bin 
+INFO:  Found the required file in cache!  Carla/Maps/Nav/Town10HD_Opt.bin 
+INFO:  Found the required file in cache!  Carla/Maps/Nav/Town10HD_Opt.bin 

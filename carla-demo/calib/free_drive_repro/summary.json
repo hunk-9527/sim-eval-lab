@@ -1,0 +1,375 @@
+{
+  "map": "Carla/Maps/Town04",
+  "warmup": 150,
+  "window": 60,
+  "max_dist": 640.0,
+  "straight_start": [
+    -364.3,
+    37.1
+  ],
+  "results": [
+    {
+      "vehicle": "vehicle.carlamotors.carlacola",
+      "throttle": 0.3,
+      "up_free": {
+        "v": 0.07368866666666667,
+        "std": 3.7124415446206576e-05,
+        "class": "稳定平衡",
+        "info": {
+          "dist": 1.3398771595663992,
+          "max_lat": 0.03226292632978607,
+          "lane_w": 3.5,
+          "collisions": 0,
+          "airborne": false,
+          "yaw_err": 3.7179671892317856e-05,
+          "off_road": false,
+          "spin": 0,
+          "steps": 210,
+          "spin_target": 16.0,
+          "spin_v": 0.0,
+          "hit_by": []
+        }
+      },
+      "up_pinned": {
+        "v": 0.8600665,
+        "std": 0.027578754674870053,
+        "class": "极限环",
+        "info": {
+          "note": "ok（冲刺 0 拍 + 测量 210 拍）"
+        }
+      },
+      "down_free": {
+        "v": 7.321404833333333,
+        "std": 0.25075204613649493,
+        "class": "未达平衡",
+        "info": {
+          "dist": 398.28307208119674,
+          "max_lat": 1.7453285369123526,
+          "lane_w": 3.5,
+          "collisions": 0,
+          "airborne": false,
+          "yaw_err": 3.7179671892317856e-05,
+          "off_road": false,
+          "spin": 200,
+          "steps": 210,
+          "spin_target": 16.0,
+          "spin_v": 14.500296712589245,
+          "hit_by": []
+        }
+      },
+      "down_pinned": {
+        "v": 9.960559333333334,
+        "std": 0.30740417362091155,
+        "class": "未达平衡",
+        "info": {
+          "note": "ok（冲刺 136 拍 + 测量 210 拍）",
+          "spin_target": 14.500296712589245,
+          "spin_v": 14.500296712589245
+        }
+      }
+    },
+    {
+      "vehicle": "vehicle.carlamotors.carlacola",
+      "throttle": 0.4,
+      "up_free": {
+        "v": 2.9691311666666667,
+        "std": 0.027309092996757604,
+        "class": "稳定平衡",
+        "info": {
+          "dist": 47.2145621410385,
+          "max_lat": 0.31417023926810017,
+          "lane_w": 3.5,
+          "collisions": 0,
+          "airborne": false,
+          "yaw_err": 3.7179671892317856e-05,
+          "off_road": false,
+          "spin": 0,
+          "steps": 210,
+          "spin_target": 16.0,
+          "spin_v": 0.0,
+          "hit_by": []
+        }
+      },
+      "up_pinned": {
+        "v": 3.320222333333333,
+        "std": 0.0354852831639008,
+        "class": "未达平衡",
+        "info": {
+          "note": "ok（冲刺 0 拍 + 测量 210 拍）"
+        }
+      },
+      "down_free": {
+        "v": 10.332461833333333,
+        "std": 0.010913650548993863,
+        "class": "稳定平衡",
+        "info": {
+          "dist": 434.8146240234952,
+          "max_lat": 1.7453285369123526,
+          "lane_w": 3.5,
+          "collisions": 0,
+          "airborne": false,
+          "yaw_err": 3.7179671892317856e-05,
+          "off_road": false,
+          "spin": 200,
+          "steps": 210,
+          "spin_target": 16.0,
+          "spin_v": 14.500296712589245,
+          "hit_by": []
+        }
+      },
+      "down_pinned": {
+        "v": 12.421750666666666,
+        "std": 0.13602370419485307,
+        "class": "未达平衡",
+        "info": {
+          "note": "ok（冲刺 136 拍 + 测量 210 拍）",
+          "spin_target": 14.500296712589245,
+          "spin_v": 14.500296712589245
+        }
+      }
+    },
+    {
+      "vehicle": "vehicle.carlamotors.carlacola",
+      "throttle": 0.5,
+      "up_free": {
+        "v": 4.578582333333333,
+        "std": 0.05225240129622964,
+        "class": "未达平衡",
+        "info": {
+          "dist": 79.03146586393615,
+          "max_lat": 0.41086553513001217,
+          "lane_w": 3.5,
+          "collisions": 0,
+          "airborne": false,
+          "yaw_err": 3.7179671892317856e-05,
+          "off_road": false,
+          "spin": 0,
+          "steps": 210,
+          "spin_target": 16.0,
+          "spin_v": 0.0,
+          "hit_by": []
+        }
+      },
+      "up_pinned": {
+        "v": 4.9822568333333335,
+        "std": 0.013002257559319797,
+        "class": "稳定平衡",
+        "info": {
+          "note": "ok（冲刺 0 拍 + 测量 210 拍）"
+        }
+      },
+      "down_free": {
+        "v": 13.203919666666666,
+        "std": 0.25532751316016766,
+        "class": "未达平衡",
+        "info": {
+          "dist": 471.216081104328,
+          "max_lat": 1.9313087626280052,
+          "lane_w": 3.5,
+          "collisions": 0,
+          "airborne": false,
+          "yaw_err": 3.7179671892317856e-05,
+          "off_road": false,
+          "spin": 200,
+          "steps": 210,
+          "spin_target": 16.0,
+          "spin_v": 14.500296712589245,
+          "hit_by": []
+        }
+      },
+      "down_pinned": {
+        "v": 14.883669666666666,
+        "std": 0.0165645802810964,
+        "class": "稳定平衡",
+        "info": {
+          "note": "ok（冲刺 136 拍 + 测量 210 拍）",
+          "spin_target": 14.500296712589245,
+          "spin_v": 14.500296712589245
+        }
+      }
+    },
+    {
+      "vehicle": "vehicle.tesla.model3",
+      "throttle": 0.3,
+      "up_free": {
+        "v": 5.026589333333333,
+        "std": 0.025909207878452942,
+        "class": "极限环",
+        "info": {
+          "dist": 93.30021687438143,
+          "max_lat": 0.6012883653180097,
+          "lane_w": 3.5,
+          "collisions": 0,
+          "airborne": false,
+          "yaw_err": 2.176752303739704e-06,
+          "off_road": false,
+          "spin": 0,
+          "steps": 210,
+          "spin_target": 16.0,
+          "spin_v": 0.0,
+          "hit_by": []
+        }
+      },
+      "up_pinned": {
+        "v": 5.064414,
+        "std": 0.03289065775160683,
+        "class": "极限环",
+        "info": {
+          "note": "ok（冲刺 0 拍 + 测量 210 拍）"
+        }
+      },
+      "down_free": {
+        "v": 4.9947875,
+        "std": 0.0031616792083743856,
+        "class": "稳定平衡",
+        "info": {
+          "dist": 172.61306845649625,
+          "max_lat": 1.2874499971611137,
+          "lane_w": 3.5,
+          "collisions": 0,
+          "airborne": false,
+          "yaw_err": 2.176752303739704e-06,
+          "off_road": false,
+          "spin": 39,
+          "steps": 210,
+          "spin_target": 16.0,
+          "spin_v": 16.151666086345575,
+          "hit_by": []
+        }
+      },
+      "down_pinned": {
+        "v": 5.036169,
+        "std": 0.03218153635756594,
+        "class": "极限环",
+        "info": {
+          "note": "ok（冲刺 39 拍 + 测量 210 拍）",
+          "spin_target": 16.151666086345575,
+          "spin_v": 16.151666086345575
+        }
+      }
+    },
+    {
+      "vehicle": "vehicle.tesla.model3",
+      "throttle": 0.4,
+      "up_free": {
+        "v": 0.6215343333333333,
+        "std": 0.6531558399656412,
+        "class": "未达平衡",
+        "info": {
+          "dist": 68.66001598985997,
+          "max_lat": 3.5533239502686658,
+          "lane_w": 3.5,
+          "collisions": 105,
+          "airborne": false,
+          "yaw_err": 2.176752303739704e-06,
+          "off_road": false,
+          "spin": 0,
+          "steps": 210,
+          "spin_target": 16.0,
+          "spin_v": 0.0,
+          "hit_by": [
+            "static.guardrail"
+          ],
+          "invalid": "发生碰撞（105 次）"
+        }
+      },
+      "up_pinned": {
+        "v": 8.524489666666666,
+        "std": 0.08378123948646782,
+        "class": "未达平衡",
+        "info": {
+          "note": "ok（冲刺 0 拍 + 测量 210 拍）"
+        }
+      },
+      "down_free": {
+        "v": 6.811197666666667,
+        "std": 0.1550426204453329,
+        "class": "未达平衡",
+        "info": {
+          "dist": 223.45435991901843,
+          "max_lat": 1.6312461187854497,
+          "lane_w": 3.5,
+          "collisions": 0,
+          "airborne": false,
+          "yaw_err": 2.176752303739704e-06,
+          "off_road": false,
+          "spin": 39,
+          "steps": 210,
+          "spin_target": 16.0,
+          "spin_v": 16.151666086345575,
+          "hit_by": []
+        }
+      },
+      "down_pinned": {
+        "v": 8.960367333333334,
+        "std": 0.06537182935247329,
+        "class": "未达平衡",
+        "info": {
+          "note": "ok（冲刺 39 拍 + 测量 210 拍）",
+          "spin_target": 16.151666086345575,
+          "spin_v": 16.151666086345575
+        }
+      }
+    },
+    {
+      "vehicle": "vehicle.tesla.model3",
+      "throttle": 0.5,
+      "up_free": {
+        "v": 12.176850666666667,
+        "std": 0.027977780818992014,
+        "class": "稳定平衡",
+        "info": {
+          "dist": 209.3661205193494,
+          "max_lat": 1.548085649924437,
+          "lane_w": 3.5,
+          "collisions": 0,
+          "airborne": false,
+          "yaw_err": 2.176752303739704e-06,
+          "off_road": false,
+          "spin": 0,
+          "steps": 210,
+          "spin_target": 16.0,
+          "spin_v": 0.0,
+          "hit_by": []
+        }
+      },
+      "up_pinned": {
+        "v": 13.625810166666666,
+        "std": 0.1190085137359462,
+        "class": "未达平衡",
+        "info": {
+          "note": "ok（冲刺 0 拍 + 测量 210 拍）"
+        }
+      },
+      "down_free": {
+        "v": 12.696544,
+        "std": 0.20824868211827882,
+        "class": "未达平衡",
+        "info": {
+          "dist": 313.55469652075465,
+          "max_lat": 1.7482277347936965,
+          "lane_w": 3.5,
+          "collisions": 0,
+          "airborne": false,
+          "yaw_err": 2.176752303739704e-06,
+          "off_road": false,
+          "spin": 39,
+          "steps": 210,
+          "spin_target": 16.0,
+          "spin_v": 16.151666086345575,
+          "hit_by": []
+        }
+      },
+      "down_pinned": {
+        "v": 13.974347999999999,
+        "std": 0.018923608958124206,
+        "class": "稳定平衡",
+        "info": {
+          "note": "ok（冲刺 39 拍 + 测量 210 拍）",
+          "spin_target": 16.151666086345575,
+          "spin_v": 16.151666086345575
+        }
+      }
+    }
+  ]
+}

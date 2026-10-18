@@ -1,0 +1,168 @@
+{
+  "map": "Carla/Maps/Town10HD_Opt",
+  "vehicles": [
+    {
+      "vehicle": "vehicle.micro.microlino",
+      "mass": 513.0,
+      "drag_coefficient": 0.30000001192092896,
+      "max_rpm": 4500.0,
+      "moi": 1.0,
+      "final_ratio": 4.0,
+      "gear_switch_time": 0.0,
+      "clutch_strength": 10.0,
+      "use_gear_autobox": true,
+      "damping_rate_full_throttle": 0.15000000596046448,
+      "damping_rate_zero_throttle_clutch_engaged": 2.0,
+      "damping_rate_zero_throttle_clutch_disengaged": 0.3499999940395355,
+      "n_forward_gears": 1,
+      "gear_ratios": [
+        1.0
+      ],
+      "torque_peak_nm": 175.0,
+      "torque_peak_at_rpm": 0.0,
+      "torque_curve_pts": 5,
+      "n_wheels": 4,
+      "tire_friction": [
+        3.5,
+        3.5,
+        3.5,
+        3.5
+      ],
+      "wheel_radius_m": 25.0,
+      "max_brake_torque": 100.0
+    },
+    {
+      "vehicle": "vehicle.audi.a2",
+      "mass": 995.0,
+      "drag_coefficient": 0.30000001192092896,
+      "max_rpm": 6300.0,
+      "moi": 1.0,
+      "final_ratio": 3.930000066757202,
+      "gear_switch_time": 0.10000000149011612,
+      "clutch_strength": 10.0,
+      "use_gear_autobox": true,
+      "damping_rate_full_throttle": 0.10000000149011612,
+      "damping_rate_zero_throttle_clutch_engaged": 2.0,
+      "damping_rate_zero_throttle_clutch_disengaged": 0.3499999940395355,
+      "n_forward_gears": 5,
+      "gear_ratios": [
+        3.45,
+        2.1,
+        1.39,
+        1.03,
+        0.81
+      ],
+      "torque_peak_nm": 390.0,
+      "torque_peak_at_rpm": 4000.0,
+      "torque_curve_pts": 7,
+      "n_wheels": 4,
+      "tire_friction": [
+        3.5,
+        3.5,
+        3.5,
+        3.5
+      ],
+      "wheel_radius_m": 33.0,
+      "max_brake_torque": 450.0
+    },
+    {
+      "vehicle": "vehicle.tesla.model3",
+      "mass": 1845.0,
+      "drag_coefficient": 0.15000000596046448,
+      "max_rpm": 15000.0,
+      "moi": 1.0,
+      "final_ratio": 9.0,
+      "gear_switch_time": 0.0,
+      "clutch_strength": 10.0,
+      "use_gear_autobox": true,
+      "damping_rate_full_throttle": 0.15000000596046448,
+      "damping_rate_zero_throttle_clutch_engaged": 2.0,
+      "damping_rate_zero_throttle_clutch_disengaged": 0.3499999940395355,
+      "n_forward_gears": 1,
+      "gear_ratios": [
+        1.0
+      ],
+      "torque_peak_nm": 743.0,
+      "torque_peak_at_rpm": -9.0,
+      "torque_curve_pts": 6,
+      "n_wheels": 4,
+      "tire_friction": [
+        3.5,
+        3.5,
+        3.5,
+        3.5
+      ],
+      "wheel_radius_m": 37.0,
+      "max_brake_torque": 700.0
+    },
+    {
+      "vehicle": "vehicle.nissan.patrol",
+      "mass": 2355.0,
+      "drag_coefficient": 0.30000001192092896,
+      "max_rpm": 6000.0,
+      "moi": 1.0,
+      "final_ratio": 4.814000129699707,
+      "gear_switch_time": 0.10000000149011612,
+      "clutch_strength": 10.0,
+      "use_gear_autobox": true,
+      "damping_rate_full_throttle": 0.15000000596046448,
+      "damping_rate_zero_throttle_clutch_engaged": 2.0,
+      "damping_rate_zero_throttle_clutch_disengaged": 0.3499999940395355,
+      "n_forward_gears": 6,
+      "gear_ratios": [
+        5.08,
+        2.804,
+        1.783,
+        1.26,
+        1.0,
+        0.835
+      ],
+      "torque_peak_nm": 974.7,
+      "torque_peak_at_rpm": 3100.0,
+      "torque_curve_pts": 8,
+      "n_wheels": 4,
+      "tire_friction": [
+        3.5,
+        3.5,
+        3.5,
+        3.5
+      ],
+      "wheel_radius_m": 39.0,
+      "max_brake_torque": 1300.0
+    },
+    {
+      "vehicle": "vehicle.carlamotors.carlacola",
+      "mass": 4600.0,
+      "drag_coefficient": 0.30000001192092896,
+      "max_rpm": 4500.0,
+      "moi": 1.0,
+      "final_ratio": 4.0,
+      "gear_switch_time": 0.10000000149011612,
+      "clutch_strength": 10.0,
+      "use_gear_autobox": true,
+      "damping_rate_full_throttle": 0.15000000596046448,
+      "damping_rate_zero_throttle_clutch_engaged": 2.0,
+      "damping_rate_zero_throttle_clutch_disengaged": 0.3499999940395355,
+      "n_forward_gears": 5,
+      "gear_ratios": [
+        5.016,
+        2.672,
+        1.585,
+        1.0,
+        0.77
+      ],
+      "torque_peak_nm": 520.0,
+      "torque_peak_at_rpm": 1315.0,
+      "torque_curve_pts": 3,
+      "n_wheels": 4,
+      "tire_friction": [
+        3.5,
+        3.5,
+        3.5,
+        3.5
+      ],
+      "wheel_radius_m": 46.0,
+      "max_brake_torque": 2700.0
+    }
+  ]
+}

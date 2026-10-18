@@ -1,0 +1,13 @@
+phase,throttle,v,status,note
+hold_ss,0.1,0.0,DEADZONE,油门死区（车全程未起步）
+hold_ss,0.12,0.0,DEADZONE,油门死区（车全程未起步）
+hold_ss,0.15,0.846,OK,稳态
+hold_ss,0.2,1.22,OK,稳态
+hold_ss,0.3,2.138,OK,稳态
+hold_ss,0.4,3.25,OK,稳态
+hold_ss,0.5,4.712,OK,稳态
+hold_ss,0.6,6.638,OK,稳态
+hold_ss,0.7,9.634,OK,稳态
+hold_ss,0.8,13.959,OK,稳态
+hold_ss,0.9,19.989,OK,稳态
+hold_ss,1.0,25.304,OK,稳态

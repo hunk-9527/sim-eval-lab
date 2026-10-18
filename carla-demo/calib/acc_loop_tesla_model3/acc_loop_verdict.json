@@ -1,0 +1,13 @@
+{
+  "vehicle": "vehicle.tesla.model3",
+  "map": "(replot)",
+  "n": 500,
+  "gap_err_mean": 6.352180353163667,
+  "gap_err_max_abs": 82.14098551599463,
+  "gap_min": 15.065659740301731,
+  "collision": false,
+  "brake_ticks": 0,
+  "saturated_ticks": 0,
+  "v_min": 7.980254649352005,
+  "v_max": 28.688683951208386
+}

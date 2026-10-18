@@ -1,0 +1,21 @@
+{
+  "vehicle": "vehicle.audi.a2",
+  "carla_version": "unknown",
+  "map": "Carla/Maps/Town10HD_Opt",
+  "dt": 0.1,
+  "blueprint_attrs": [
+    "base_type",
+    "color",
+    "generation",
+    "has_dynamic_doors",
+    "has_lights",
+    "number_of_wheels",
+    "object_type",
+    "role_name",
+    "ros_name",
+    "special_type",
+    "sticky_control",
+    "terramechanics"
+  ],
+  "note": "physics params (mass/drag/torque_curve) are NOT exposed as blueprint attributes in CARLA 0.9.15 -- bind by vehicle id only"
+}
