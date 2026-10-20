@@ -1,0 +1,273 @@
+{
+  "generated_by": "12_credibility_boundary.py",
+  "sut": {
+    "accel_max": 2.0,
+    "brake_max": -4.0,
+    "time_gap": 1.5,
+    "min_gap": 3.0,
+    "source": "acc-sim/acc/models.py"
+  },
+  "plant": {
+    "F_max": 15.18,
+    "B_max": 2.88,
+    "v_star": 9.54,
+    "envelope": [
+      {
+        "v": 0,
+        "G": 1.09,
+        "accel_max": 14.1,
+        "decel_max": 3.97,
+        "decel_over_req": 0.99
+      },
+      {
+        "v": 2,
+        "G": 1.09,
+        "accel_max": 14.1,
+        "decel_max": 3.97,
+        "decel_over_req": 0.99
+      },
+      {
+        "v": 5,
+        "G": 2.32,
+        "accel_max": 12.86,
+        "decel_max": 5.2,
+        "decel_over_req": 1.3
+      },
+      {
+        "v": 10,
+        "G": 4.15,
+        "accel_max": 11.03,
+        "decel_max": 7.03,
+        "decel_over_req": 1.76
+      },
+      {
+        "v": 15,
+        "G": 6.17,
+        "accel_max": 9.01,
+        "decel_max": 9.05,
+        "decel_over_req": 2.26
+      },
+      {
+        "v": 20,
+        "G": 8.03,
+        "accel_max": 7.15,
+        "decel_max": 10.91,
+        "decel_over_req": 2.73
+      },
+      {
+        "v": 25,
+        "G": 9.77,
+        "accel_max": 5.42,
+        "decel_max": 12.65,
+        "decel_over_req": 3.16
+      },
+      {
+        "v": 30,
+        "G": 11.23,
+        "accel_max": 3.95,
+        "decel_max": 14.11,
+        "decel_over_req": 3.53
+      },
+      {
+        "v": 35,
+        "G": 11.81,
+        "accel_max": 3.37,
+        "decel_max": 14.69,
+        "decel_over_req": 3.67
+      },
+      {
+        "v": 40,
+        "G": 11.81,
+        "accel_max": 3.37,
+        "decel_max": 14.69,
+        "decel_over_req": 3.67
+      }
+    ]
+  },
+  "hysteresis": {
+    "vehicle.audi.a2": {
+      "delta_max": 15.027,
+      "at_throttle": 0.6,
+      "n_pairs": 6,
+      "deadzone_throttle_max": null,
+      "source": "calib\\veh_audi_a2\\balance_table.csv"
+    },
+    "vehicle.carlamotors.carlacola": {
+      "delta_max": 18.782,
+      "at_throttle": 0.3,
+      "n_pairs": 8,
+      "deadzone_throttle_max": null,
+      "source": "calib\\veh_carlamotors_carlacola\\balance_table.csv"
+    },
+    "vehicle.micro.microlino": {
+      "delta_max": 0.084,
+      "at_throttle": 0.15,
+      "n_pairs": 8,
+      "deadzone_throttle_max": null,
+      "source": "calib\\veh_micro_microlino\\balance_table.csv"
+    },
+    "vehicle.nissan.patrol": {
+      "delta_max": 27.367,
+      "at_throttle": 0.45,
+      "n_pairs": 7,
+      "deadzone_throttle_max": 0.2,
+      "source": "calib\\veh_nissan_patrol\\balance_table.csv"
+    },
+    "vehicle.tesla.model3": {
+      "delta_max": 0.218,
+      "at_throttle": 0.12,
+      "n_pairs": 9,
+      "deadzone_throttle_max": null,
+      "source": "calib\\veh_tesla_model3\\balance_table.csv"
+    }
+  },
+  "grade_sweep": {
+    "vehicle": "vehicle.tesla.model3",
+    "map": "Carla/Maps/Town04",
+    "straight_start": [
+      -364.3,
+      37.1
+    ],
+    "points": [
+      {
+        "offset_m": 0,
+        "grade_pct": 0.014,
+        "v_up": 8.7707
+      },
+      {
+        "offset_m": 200,
+        "grade_pct": 5.184,
+        "v_up": 6.2773
+      },
+      {
+        "offset_m": 400,
+        "grade_pct": 0.0,
+        "v_up": 8.7866
+      },
+      {
+        "offset_m": 600,
+        "grade_pct": -6.005,
+        "v_up": 11.0558
+      }
+    ],
+    "v_spread": 4.78,
+    "v_min": 6.28,
+    "v_max": 11.06,
+    "grade_span_pct": 11.19,
+    "source": "calib\\grade_sweep_tesla\\summary.json"
+  },
+  "closed_loop": {
+    "vehicle": "vehicle.tesla.model3",
+    "map": "(replot)",
+    "n": 500,
+    "gap_err_mean": 6.352180353163667,
+    "gap_err_max_abs": 82.14098551599463,
+    "gap_min": 15.065659740301731,
+    "collision": false,
+    "brake_ticks": 0,
+    "saturated_ticks": 0,
+    "v_min": 7.980254649352005,
+    "v_max": 28.688683951208386,
+    "set_speed_assumed": 25.0
+  },
+  "loop_margin": {
+    "n": 500,
+    "R_min": 2.81,
+    "v_at_R_min": 10.03,
+    "a_req_at_R_min": -1.352,
+    "ticks_R_negative": 0,
+    "source": "calib\\acc_loop_tesla_model3\\acc_loop.csv"
+  },
+  "criteria": [
+    {
+      "family": "I 不碰 plant",
+      "name": "状态机 / 激活逻辑",
+      "tesla": "可用",
+      "multi": "可用",
+      "site": "可用",
+      "why": "只读 SUT 内部状态，被控对象怎么变都不影响",
+      "worst": "可用"
+    },
+    {
+      "family": "I 不碰 plant",
+      "name": "执行器使用率（饱和 / 闲置）",
+      "tesla": "可用",
+      "multi": "可用",
+      "site": "可用",
+      "why": "这是体检量本身，不是被检对象 —— 0/500 拍就是这么数出来的",
+      "worst": "可用"
+    },
+    {
+      "family": "II 撞分辨率",
+      "name": "跟车稳态车距 / 时距控制",
+      "tesla": "可用",
+      "multi": "需谨慎",
+      "site": "可用",
+      "why": "单速车 Δ≤0.22 m/s，实测稳态误差 0.09 / 0.16 m，判据容差 1.0 m，差一个量级；多挡车 Δ=15.0~27.4 m/s，车距被速度误差带着跑",
+      "worst": "需谨慎"
+    },
+    {
+      "family": "II 撞分辨率",
+      "name": "巡航稳态车速",
+      "tesla": "可用",
+      "multi": "不可用",
+      "site": "需谨慎",
+      "why": "R2：多挡车 Δ=15.0~27.4 m/s，而跟车微调要 0.1 m/s 量级，差两个数量级。换测点：闭环里速度是被控量，本身不随测点变；但标定表是在某个测点量的，运行点换坡度后 G(v) 失配（开环读数就摆 4.78 m/s）",
+      "worst": "不可用"
+    },
+    {
+      "family": "II 撞分辨率",
+      "name": "巡航超调 / 响应时间",
+      "tesla": "需谨慎",
+      "multi": "不可用",
+      "site": "需谨慎",
+      "why": "实测 v_max=28.69 vs set_speed=25.0（+14.8%）；但超调是「PID × 被控对象」的合量，换车就换数。⚠ 更根本：闭环的可达域是翻译层「让它可达」的 —— 精度类判据接近自证",
+      "worst": "不可用"
+    },
+    {
+      "family": "III 撞固有量",
+      "name": "减速度幅值 / 制动距离 / jerk",
+      "tesla": "不可用",
+      "multi": "不可用",
+      "site": "不可用",
+      "why": "R1：v ≥ 9.54 m/s 时 G(v) ≥ 4.0 = SUT 最大减速请求，刹车**用不到**。逐拍算 R=a_req+G(v)：R_min=+2.81 m/s²（v=10.03），R<0 的拍数 0/500，刹车 0/500 拍。v < 9.54 的窗口未做实验，暂不给可用结论",
+      "worst": "不可用"
+    },
+    {
+      "family": "III 撞固有量",
+      "name": "最小车距 / 碰撞 / TTC",
+      "tesla": "不可用",
+      "multi": "不可用",
+      "site": "不可用",
+      "why": "被控对象减速能力是 SUT 请求的 0.99~3.53 倍（v=0~30）→ 危险场景被自动化解。**撞上 = 可信；没撞上 ≠ 安全**（单向判据）。本 run 最小车距 15.07 m",
+      "worst": "不可用"
+    },
+    {
+      "family": "III 撞固有量",
+      "name": "加速度幅值 / 起步平顺性",
+      "tesla": "需谨慎",
+      "multi": "需谨慎",
+      "site": "需谨慎",
+      "why": "v < 2.5 m/s **不可用**：标定表明确排除这一段（从静止起步是离合/一档啮合阶跃）。v ≥ 2.5 时可达域 3.95~14.10 m/s² 远大于请求上限 2.0，但加速度本就是 F(θ)−G(v) 现算的 —— 测的是表，不是车",
+      "worst": "需谨慎"
+    },
+    {
+      "family": "IV 台架没有",
+      "name": "横向 / 变道 / 泊车 / 车道保持",
+      "tesla": "不可用",
+      "multi": "不可用",
+      "site": "不可用",
+      "why": "1-D 纵向台没有横向自由度（车钉位置，位置由自积分的车距代理）",
+      "worst": "不可用"
+    },
+    {
+      "family": "IV 台架没有",
+      "name": "感知类（检出率 / 虚警 / 测距误差）",
+      "tesla": "不可用",
+      "multi": "不可用",
+      "site": "不可用",
+      "why": "distance 是几何真值，传感器链没有被建模",
+      "worst": "不可用"
+    }
+  ]
+}
